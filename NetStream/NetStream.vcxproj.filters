@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;cc;s;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\menus">
+      <UniqueIdentifier>{46cc97e8-968f-4244-9a90-70ff8461f55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\menus">
+      <UniqueIdentifier>{846ca004-6b98-44d7-aef8-7a0982f51f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resource">
+      <UniqueIdentifier>{784adb2a-2159-4d72-ba10-3c360fe3bb22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\players">
+      <UniqueIdentifier>{fbf463f0-23d6-426a-920e-d57c6fc940e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\players">
+      <UniqueIdentifier>{ebaf1957-7ba0-40ce-a4b3-c3fbf14b8060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\browsers">
+      <UniqueIdentifier>{c1271002-95d8-4ece-9b10-de876141361f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\browsers">
+      <UniqueIdentifier>{0601fe77-e2f9-480e-8377-27578763de4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\subs">
+      <UniqueIdentifier>{02e6370e-4def-44f0-b9b3-f761cfa3fc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\subs">
+      <UniqueIdentifier>{92115278-5319-4fda-b0eb-0787c9ec7d91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\paf_runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\yt_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_generic.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_first.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_settings.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_player_simple.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_youtube.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_player_youtube.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\downloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\option_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_server.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tw_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ftpparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tex_pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\np_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menus\menu_hvdb.cpp">
+      <Filter>Source Files\menus</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hvdb_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\players\player_av.cpp">
+      <Filter>Source Files\players</Filter>
+    </ClCompile>
+    <ClCompile Include="source\players\player_beav.cpp">
+      <Filter>Source Files\players</Filter>
+    </ClCompile>
+    <ClCompile Include="source\players\player_fmod.cpp">
+      <Filter>Source Files\players</Filter>
+    </ClCompile>
+    <ClCompile Include="source\browsers\ftp_server_browser.cpp">
+      <Filter>Source Files\browsers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\browsers\http_server_browser.cpp">
+      <Filter>Source Files\browsers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\browsers\local_server_browser.cpp">
+      <Filter>Source Files\browsers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\subs\subs_generic.cpp">
+      <Filter>Source Files\subs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\subs\subs_srt.cpp">
+      <Filter>Source Files\subs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_settings.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_youtube.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\yt_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_generic.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_first.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_http.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_player_simple.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_player_youtube.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\downloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_local.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\option_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_ftp.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_server.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tw_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ftpparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tex_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\np_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menus\menu_hvdb.h">
+      <Filter>Header Files\menus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hvdb_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\players\player_av.h">
+      <Filter>Header Files\players</Filter>
+    </ClInclude>
+    <ClInclude Include="include\players\player_beav.h">
+      <Filter>Header Files\players</Filter>
+    </ClInclude>
+    <ClInclude Include="include\players\player_fmod.h">
+      <Filter>Header Files\players</Filter>
+    </ClInclude>
+    <ClInclude Include="include\players\player_generic.h">
+      <Filter>Header Files\players</Filter>
+    </ClInclude>
+    <ClInclude Include="include\browsers\ftp_server_browser.h">
+      <Filter>Header Files\browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\browsers\generic_server_browser.h">
+      <Filter>Header Files\browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\browsers\http_server_browser.h">
+      <Filter>Header Files\browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\browsers\local_server_browser.h">
+      <Filter>Header Files\browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\subs\subs_generic.h">
+      <Filter>Header Files\subs</Filter>
+    </ClInclude>
+    <ClInclude Include="include\subs\subs_srt.h">
+      <Filter>Header Files\subs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="RES_RCO\netstream_plugin.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_en.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\file\netstream_settings.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_es.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_ja.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_zh-s.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_zh-t.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_ru.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_pl.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_pt.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_pt-br.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_it.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+    <Xml Include="RES_RCO\locale\netstream_locale_fr.xml">
+      <Filter>Source Files\resource</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
