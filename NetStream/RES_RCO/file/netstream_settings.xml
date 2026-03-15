@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application_settings version="1.0" bg_color="17.0, 75.0, 168.0, 255.0">
+  <setting_list id="ns_setting" title="msg_settings">
+    <setting_list id="http_setting" title="msg_settings_http" style="edit" icon="tex_spanner">
+      <text_field id="http_host" title="msg_http_host" max_length="255" min_length="0" keyboard_type="url" key="http_host" default_value=""/>
+      <text_field id="http_port" title="msg_http_port" max_length="31" min_length="0" keyboard_type="numeral" key="http_port" default_value=""/>
+      <text_field id="http_user" title="msg_http_user" max_length="255" min_length="0" keyboard_type="alphabet" key="http_user" default_value=""/>
+      <text_field id="http_password" title="msg_http_password" max_length="255" min_length="0" keyboard_type="alphabet" key="http_password" default_value=""/>
+    </setting_list>
+    <setting_list id="ftp_setting" title="msg_settings_ftp" style="edit" icon="tex_spanner">
+      <text_field id="ftp_host" title="msg_ftp_host" max_length="255" min_length="0" keyboard_type="url" key="ftp_host" default_value=""/>
+      <text_field id="ftp_port" title="msg_ftp_port" max_length="31" min_length="0" keyboard_type="numeral" key="ftp_port" default_value=""/>
+      <text_field id="ftp_user" title="msg_ftp_user" max_length="255" min_length="0" keyboard_type="alphabet" key="ftp_user" default_value=""/>
+      <text_field id="ftp_password" title="msg_ftp_password" max_length="255" min_length="0" keyboard_type="alphabet" key="ftp_password" default_value=""/>
+      <toggle_switch id="ftp_nlst" title="msg_ftp_nlst" hint="msg_ftp_nlst_hint" key="ftp_nlst" default_value="0" />
+    </setting_list>
+    <setting_list id="local_setting" title="msg_settings_local" icon="tex_spanner">
+      <text_field id="local_playlist_prefix" title="msg_local_playlist_prefix" max_length="255" min_length="0" keyboard_type="url" key="local_playlist_prefix" default_value=""/>
+      <list id="list_local_sort_name" title="msg_local_sort_name" key="local_sort_name" default_value="0">
+        <list_item id="list_local_sort_name_00" title="msg_option_local_sort_name_0" value="0" />
+        <list_item id="list_local_sort_name_01" title="msg_option_local_sort_name_1" value="1" />
+      </list>
+      <list id="list_local_sort_type" title="msg_local_sort_type" key="local_sort_type" default_value="0">
+        <list_item id="list_local_sort_type_00" title="msg_option_local_sort_type_0" value="0" />
+        <list_item id="list_local_sort_type_01" title="msg_option_local_sort_type_1" value="1" />
+      </list>
+    </setting_list>
+    <setting_list id="youtube_search_setting" title="msg_settings_search" icon="tex_spanner">
+      <list id="list_youtube_search_region" title="msg_youtube_search_region" key="yt_search_region" default_value="0">
+        <list_item id="list_youtube_search_region_00" title="msg_option_search_region_0" value="0" />
+      </list>
+      <list id="list_youtube_search_sort" title="msg_youtube_search_sort" key="yt_search_sort" default_value="0">
+        <list_item id="list_youtube_search_sort_00" title="msg_option_search_sort_0" value="0" />
+        <list_item id="list_youtube_search_sort_01" title="msg_option_search_sort_1" value="1" />
+        <list_item id="list_youtube_search_sort_02" title="msg_option_search_sort_2" value="2" />
+        <list_item id="list_youtube_search_sort_03" title="msg_option_search_sort_3" value="3" />
+      </list>
+      <list id="list_youtube_search_date" title="msg_youtube_search_date" key="yt_search_date" default_value="5">
+        <list_item id="list_youtube_search_date_00" title="msg_option_search_date_0" value="0" />
+        <list_item id="list_youtube_search_date_01" title="msg_option_search_date_1" value="1" />
+        <list_item id="list_youtube_search_date_02" title="msg_option_search_date_2" value="2" />
+        <list_item id="list_youtube_search_date_03" title="msg_option_search_date_3" value="3" />
+        <list_item id="list_youtube_search_date_04" title="msg_option_search_date_4" value="4" />
+        <list_item id="list_youtube_search_date_05" title="msg_option_search_date_5" value="5" />
+      </list>
+      <list id="list_youtube_search_dur" title="msg_youtube_search_dur" key="yt_search_dur" default_value="3">
+        <list_item id="list_youtube_search_dur_00" title="msg_option_search_dur_0" value="0" />
+        <list_item id="list_youtube_search_dur_01" title="msg_option_search_dur_1" value="1" />
+        <list_item id="list_youtube_search_dur_02" title="msg_option_search_dur_2" value="2" />
+        <list_item id="list_youtube_search_dur_03" title="msg_option_search_dur_3" value="3" />
+      </list>
+      <list id="list_youtube_search_feature" title="msg_youtube_search_feature" key="yt_search_feature" default_value="1">
+        <list_item id="list_youtube_search_feature_00" title="msg_option_search_feature_0" value="0" />
+        <list_item id="list_youtube_search_feature_01" title="msg_option_search_feature_1" value="1" />
+      </list>
+      <text_field id="text_field_youtube_search_proxy" title="msg_youtube_search_proxy" max_length="255" min_length="0" keyboard_type="url" key="yt_search_proxy" default_value=""/>
+    </setting_list>
+    <setting_list id="youtube_comment_setting" title="msg_settings_comment" icon="tex_spanner">
+      <list id="list_youtube_comment_sort" title="msg_youtube_comment_sort" key="yt_comment_sort" default_value="0">
+        <list_item id="llist_youtube_comment_sort_00" title="msg_option_comment_sort_0" value="0" />
+        <list_item id="llist_youtube_comment_sort_01" title="msg_option_comment_sort_1" value="1" />
+      </list>
+    </setting_list>
+    <setting_list id="youtube_quality_setting" title="msg_settings_quality" icon="tex_spanner">
+      <list id="list_youtube_quality_vod_video" title="msg_youtube_quality_vod_video" key="yt_quality_vod_video" default_value="8">
+        <list_item id="list_youtube_quality_vod_video_00" title="msg_option_youtube_quality_vod_video_0" value="31" />
+        <list_item id="list_youtube_quality_vod_video_01" title="msg_option_youtube_quality_vod_video_1" value="1" />
+        <list_item id="list_youtube_quality_vod_video_02" title="msg_option_youtube_quality_vod_video_2" value="2" />
+        <list_item id="list_youtube_quality_vod_video_03" title="msg_option_youtube_quality_vod_video_3" value="4" />
+        <list_item id="list_youtube_quality_vod_video_04" title="msg_option_youtube_quality_vod_video_4" value="8" />
+        <list_item id="list_youtube_quality_vod_video_05" title="msg_option_youtube_quality_vod_video_5" value="16" />
+      </list>
+      <list id="list_youtube_quality_live" title="msg_youtube_quality_live" key="yt_quality_live" default_value="3">
+        <list_item id="list_youtube_quality_live_00" title="msg_option_youtube_quality_live_0" value="0" />
+        <list_item id="list_youtube_quality_live_01" title="msg_option_youtube_quality_live_1" value="1" />
+        <list_item id="list_youtube_quality_live_02" title="msg_option_youtube_quality_live_2" value="2" />
+        <list_item id="list_youtube_quality_live_03" title="msg_option_youtube_quality_live_3" value="3" />
+        <list_item id="list_youtube_quality_live_04" title="msg_option_youtube_quality_live_4" value="4" />
+      </list>
+    </setting_list>
+    <setting_list id="youtube_player_setting" title="msg_settings_youtube_player" icon="tex_spanner">
+      <toggle_switch id="toggle_youtube_min" title="msg_toggle_youtube_min" key="yt_min" default_value="1" />
+    </setting_list>
+    <setting_list id="cloud_sync_setting" title="msg_settings_cloud_sync" icon="tex_spanner">
+      <toggle_switch id="toggle_cloud_sync" title="msg_toggle_cloud_sync" hint="msg_cloud_sync_hint" key="cloud_sync" default_value="0" />
+      <toggle_switch id="toggle_cloud_sync_auto" title="msg_toggle_cloud_sync_auto" key="cloud_sync_auto" default_value="0" />
+    </setting_list>
+    <setting_list id="verinfo_setting" title="msg_settings_verinfo" style="edit" icon="tex_spanner">
+      <label id="label_verinfo" title="msg_verinfo" style="heading" />
+    </setting_list>
+  </setting_list>
+</application_settings>
