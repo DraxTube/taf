@@ -46,15 +46,6 @@ cat > "$STUBDIR/kernel.h" << 'EOF'
 #define SCE_KERNEL_EVF_WAITMODE_OR   1
 #define SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW  0x09408060
 #define SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT 0x00000004
-typedef struct SceKernelAllocMemBlockOpt {
-    uint32_t size;
-    uint32_t attr;
-    uint32_t alignment;
-    uint32_t uidBaseBlock;
-    const char *strBaseBlockName;
-    uint32_t flags;
-    uint32_t reserved[10];
-} SceKernelAllocMemBlockOpt;
 #endif
 EOF
 echo "  Created kernel.h"
@@ -393,6 +384,127 @@ static inline int sceBeavCorePlayerGetLibLSInterface(int handle, SceBeavCorePlay
 #endif
 EOF
 echo "  Created scebeavplayer.h"
+fi
+
+# scetypes.h - needed by app_settings.h from PAF component
+if [ ! -f "$STUBDIR/scetypes.h" ]; then
+cat > "$STUBDIR/scetypes.h" << 'EOF'
+#ifndef _VDSUITE_SCETYPES_H_
+#define _VDSUITE_SCETYPES_H_
+#include <psp2/types.h>
+#endif
+EOF
+echo "  Created scetypes.h"
+fi
+
+# app_settings.h
+if [ ! -f "$STUBDIR/app_settings.h" ]; then
+cat > "$STUBDIR/app_settings.h" << 'EOF'
+#ifndef _VDSUITE_APP_SETTINGS_H_
+#define _VDSUITE_APP_SETTINGS_H_
+#include <psp2/types.h>
+#include <stdint.h>
+#endif
+EOF
+echo "  Created app_settings.h"
+fi
+
+# paf_file_ext.h
+if [ ! -f "$STUBDIR/paf_file_ext.h" ]; then
+cat > "$STUBDIR/paf_file_ext.h" << 'EOF'
+#ifndef _VDSUITE_PAF_FILE_EXT_H_
+#define _VDSUITE_PAF_FILE_EXT_H_
+#endif
+EOF
+echo "  Created paf_file_ext.h"
+fi
+
+# registrymgr.h
+if [ ! -f "$STUBDIR/registrymgr.h" ]; then
+cat > "$STUBDIR/registrymgr.h" << 'EOF'
+#ifndef _VDSUITE_REGISTRYMGR_H_
+#define _VDSUITE_REGISTRYMGR_H_
+#include <psp2/registrymgr.h>
+#endif
+EOF
+echo "  Created registrymgr.h"
+fi
+
+# touch.h
+if [ ! -f "$STUBDIR/touch.h" ]; then
+cat > "$STUBDIR/touch.h" << 'EOF'
+#ifndef _VDSUITE_TOUCH_H_
+#define _VDSUITE_TOUCH_H_
+#include <psp2/touch.h>
+#endif
+EOF
+echo "  Created touch.h"
+fi
+
+# ctrl.h
+if [ ! -f "$STUBDIR/ctrl.h" ]; then
+cat > "$STUBDIR/ctrl.h" << 'EOF'
+#ifndef _VDSUITE_CTRL_H_
+#define _VDSUITE_CTRL_H_
+#include <psp2/ctrl.h>
+#endif
+EOF
+echo "  Created ctrl.h"
+fi
+
+# display.h
+if [ ! -f "$STUBDIR/display.h" ]; then
+cat > "$STUBDIR/display.h" << 'EOF'
+#ifndef _VDSUITE_DISPLAY_H_
+#define _VDSUITE_DISPLAY_H_
+#include <psp2/display.h>
+#endif
+EOF
+echo "  Created display.h"
+fi
+
+# fiber.h
+if [ ! -f "$STUBDIR/fiber.h" ]; then
+cat > "$STUBDIR/fiber.h" << 'EOF'
+#ifndef _VDSUITE_FIBER_H_
+#define _VDSUITE_FIBER_H_
+#include <psp2/fiber.h>
+#endif
+EOF
+echo "  Created fiber.h"
+fi
+
+# vshbridge.h
+if [ ! -f "$STUBDIR/vshbridge.h" ]; then
+cat > "$STUBDIR/vshbridge.h" << 'EOF'
+#ifndef _VDSUITE_VSHBRIDGE_H_
+#define _VDSUITE_VSHBRIDGE_H_
+static inline int vshSblAimgrIsDolce(void) { return 0; }
+#endif
+EOF
+echo "  Created vshbridge.h"
+fi
+
+# rtc.h
+if [ ! -f "$STUBDIR/rtc.h" ]; then
+cat > "$STUBDIR/rtc.h" << 'EOF'
+#ifndef _VDSUITE_RTC_H_
+#define _VDSUITE_RTC_H_
+#include <psp2/rtc.h>
+#endif
+EOF
+echo "  Created rtc.h"
+fi
+
+# sceavplayer_webmaf.h
+if [ ! -f "$STUBDIR/sceavplayer_webmaf.h" ]; then
+cat > "$STUBDIR/sceavplayer_webmaf.h" << 'EOF'
+#ifndef _VDSUITE_SCEAVPLAYER_WEBMAF_H_
+#define _VDSUITE_SCEAVPLAYER_WEBMAF_H_
+#include <stdint.h>
+#endif
+EOF
+echo "  Created sceavplayer_webmaf.h"
 fi
 
 echo "=== All stub headers created ==="
