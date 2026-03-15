@@ -20,7 +20,7 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          apk add --no-cache git bash curl tar xz zip
+          apt-get update && apt-get install -y --no-install-recommends git bash curl tar xz-utils zip
 
       - name: Install VitaSDK packages
         run: |
