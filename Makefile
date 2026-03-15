@@ -9,7 +9,8 @@ CXX      = $(PREFIX)-g++
 STRIP    = $(PREFIX)-strip
 
 CFLAGS   = -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-but-set-variable \
-           -fno-exceptions -O2 -DSCE_PAF_TOOL_PRX -DNDEBUG -DSCE_DBG_LOGGING_ENABLED=0
+           -fno-exceptions -O2 -DSCE_PAF_TOOL_PRX -DNDEBUG -DSCE_DBG_LOGGING_ENABLED=0 \
+           -D"__declspec(x)=" -include stdarg.h
 CXXFLAGS = $(CFLAGS) -std=c++11 -fno-rtti
 
 # Include directories
